@@ -18,22 +18,6 @@ import kotlinx.coroutines.channels.SendChannel
 import kotlinx.coroutines.channels.actor
 import kotlinx.coroutines.delay
 
-//
-// https://medium.com/@hanru.yeh/color-int-of-argb-in-kotlin-fb609b07439f
-//
-//    @ColorInt val BLACK       = -0x1000000
-//    @ColorInt val DKGRAY      = -0xbbbbbc
-//    @ColorInt val GRAY        = -0x777778
-//    @ColorInt val LTGRAY      = -0x333334
-//    @ColorInt val WHITE       = -0x1
-//    @ColorInt val RED         = -0x10000
-//    @ColorInt val GREEN       = -0xff0100
-//    @ColorInt val BLUE        = -0xffff01
-//    @ColorInt val YELLOW      = -0x100
-//    @ColorInt val CYAN        = -0xff0001
-//    @ColorInt val MAGENTA     = -0xff01
-//    @ColorInt val TRANSPARENT = 0
-//
 
 sealed class Msg
 data class Move(val lat: Double, val lon: Double) : Msg()
